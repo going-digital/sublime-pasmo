@@ -6,13 +6,21 @@
    "match": ";.*$"
   },
   {"name": "constant.numeric.hex",
-   "match": "\\b$[0-9a-fA-F]+\\b"
+   "match": "\\b\\$[0-9a-fA-F]+\\b"
   },
   {"name": "constant.numeric.dec",
    "match": "\\b[0-9]+\\b"
   },
   {"name": "entity.name.label",
    "match": "^\\S+:"
+  },
+  {"name": "string.quoted.single.source.pasmo",
+   "begin": "'",
+   "end": "'"
+  },
+  {"name": "string.quoted.double.source.pasmo",
+   "begin": "\"",
+   "end": "\""
   },
   {"name": "storage.type.register",
    "match": "\\b(?i:(a|f|af|b|c|bc|d|e|de|h|l|hl|i|r|sp|ix|iy))\\b"

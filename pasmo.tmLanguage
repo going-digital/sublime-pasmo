@@ -19,7 +19,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b$[0-9a-fA-F]+\b</string>
+			<string>\b\$[0-9a-fA-F]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.hex</string>
 		</dict>
@@ -34,6 +34,22 @@
 			<string>^\S+:</string>
 			<key>name</key>
 			<string>entity.name.label</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.source.pasmo</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.source.pasmo</string>
 		</dict>
 		<dict>
 			<key>match</key>
